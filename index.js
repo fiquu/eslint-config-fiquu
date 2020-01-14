@@ -12,6 +12,9 @@ module.exports = {
     'plugin:jsdoc/recommended',
     'plugin:node/recommended'
   ],
+  parserOptions: {
+    ecmaVersion: 10
+  },
   rules: {
     'capitalized-comments': ['error', 'always'],
     'no-whitespace-before-property': 'error',
