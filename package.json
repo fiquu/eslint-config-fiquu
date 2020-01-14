@@ -1,6 +1,6 @@
 {
-  "name": "@fiquu/eslint-config-fiquu",
-  "version": "1.0.0",
+  "name": "@fiquu/eslint-config",
+  "version": "0.0.0",
   "description": "fiquu ESLint standard config/",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fiquu/eslint-config-fiquu.git"
+    "url": "git+https://github.com/fiquu/eslint-config.git"
   },
   "keywords": [
     "fiquu",
@@ -19,9 +19,9 @@
   "author": "fiquu <hi@fiquu.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fiquu/eslint-config-fiquu/issues"
+    "url": "https://github.com/fiquu/eslint-config/issues"
   },
-  "homepage": "https://github.com/fiquu/eslint-config-fiquu#readme",
+  "homepage": "https://github.com/fiquu/eslint-config#readme",
   "peerDependencies": {
     "eslint": ">= 6"
   },
