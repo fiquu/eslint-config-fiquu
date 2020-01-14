@@ -1,0 +1,34 @@
+{
+  "name": "@fiquu/eslint-config-fiquu",
+  "version": "1.0.0",
+  "description": "fiquu ESLint standard config/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiquu/eslint-config-fiquu.git"
+  },
+  "keywords": [
+    "fiquu",
+    "eslint",
+    "config",
+    "eslintconfig"
+  ],
+  "author": "fiquu <hi@fiquu.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fiquu/eslint-config-fiquu/issues"
+  },
+  "homepage": "https://github.com/fiquu/eslint-config-fiquu#readme",
+  "peerDependencies": {
+    "eslint": ">= 6"
+  },
+  "dependencies": {
+    "eslint-plugin-jsdoc": "^20.3.0",
+    "eslint-plugin-mocha": "^6.2.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-security": "^1.4.0"
+  }
+}
