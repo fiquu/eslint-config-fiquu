@@ -19,7 +19,6 @@ module.exports = {
     'capitalized-comments': ['error', 'always'],
     'no-whitespace-before-property': 'error',
     'max-lines-per-function': ['error', 50],
-    'no-multiple-empty-lines': ['error', 1],
     'arrow-parens': ['error', 'as-needed'],
     'quote-props': ['error', 'as-needed'],
     'linebreak-style': ['error', 'unix'],
@@ -53,6 +52,12 @@ module.exports = {
     'no-alert': 'error',
     'no-eval': 'error',
     'no-var': 'error',
+    'no-multiple-empty-lines': [
+      'error',
+      {
+        max: 1
+      }
+    ],
     'padding-line-between-statements': [
       'error',
       {
