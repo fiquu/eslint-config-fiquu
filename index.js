@@ -1,25 +1,21 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
   plugins: [
-    '@typescript-eslint',
     'security',
     'mocha',
-    'tsdoc',
+    'jsdoc',
     'node'
   ],
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
     'plugin:security/recommended',
     'plugin:mocha/recommended',
-    'plugin:node/recommended',
-    'eslint-plugin-tsdoc'
+    'plugin:jsdoc/recommended',
+    'plugin:node/recommended'
   ],
   parserOptions: {
     ecmaVersion: 10
   },
   rules: {
-    'tsdoc/syntax': 'warn',
     'capitalized-comments': ['error', 'always'],
     'no-whitespace-before-property': 'error',
     'max-lines-per-function': ['error', 50],
