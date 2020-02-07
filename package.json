@@ -1,7 +1,7 @@
 {
   "name": "@fiquu/eslint-config",
   "version": "1.0.2",
-  "description": "fiquu ESLint standard config.",
+  "description": "fiquu ESLint standard config for TypeScript.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,21 +14,25 @@
     "fiquu",
     "eslint",
     "config",
-    "eslintconfig"
+    "eslintconfig",
+    "typescript"
   ],
-  "author": "fiquu <hi@fiquu.dev>",
+  "author": "fiquu (https://github.com/fiquu) <hi@fiquu.dev>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fiquu/eslint-config/issues"
   },
   "homepage": "https://github.com/fiquu/eslint-config#readme",
   "peerDependencies": {
+    "typescript": ">= 3",
     "eslint": ">= 6"
   },
   "dependencies": {
-    "eslint-plugin-jsdoc": "^20.3.0",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
     "eslint-plugin-mocha": "^6.2.2",
     "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-security": "^1.4.0"
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-tsdoc": "^0.2.1"
   }
 }
