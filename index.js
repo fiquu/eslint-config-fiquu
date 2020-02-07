@@ -1,21 +1,26 @@
 module.exports = {
   plugins: [
+    '@typescript-eslint',
     'security',
     'mocha',
     'jsdoc',
     'node'
   ],
   extends: [
-    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:security/recommended',
     'plugin:mocha/recommended',
     'plugin:jsdoc/recommended',
     'plugin:node/recommended'
   ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 10
   },
   rules: {
+    'node/no-unsupported-features/es-syntax': 'off', // Wont recognize TS features
+    'node/no-missing-import': 'off', // Wont recognize .ts
     'capitalized-comments': ['error', 'always'],
     'no-whitespace-before-property': 'error',
     'max-lines-per-function': ['error', 50],
