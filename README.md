@@ -10,9 +10,9 @@ And extend *@fiquu* in your ESLint config.
 ## Example
 
 #### `.eslintrc`:
-```
+```json
 {
   "extends": "@fiquu",
-  // ...
+  "...": "..."
 }
 ```
