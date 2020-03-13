@@ -57,6 +57,7 @@ module.exports = {
     'no-alert': 'error',
     'no-eval': 'error',
     'no-var': 'error',
+    'curly': 'error',
     'no-multiple-empty-lines': [
       'error',
       {
