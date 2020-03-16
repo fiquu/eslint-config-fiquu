@@ -1,5 +1,7 @@
+const { join } = require('path');
+
 module.exports = {
-  extends: '@fiquu',
+  extends: join(__dirname, 'index.js'),
   parser: '@typescript-eslint/parser',
   plugins: [
     '@typescript-eslint'
