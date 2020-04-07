@@ -29,3 +29,6 @@ Extend `@fiquu/eslint-config/typescript` in your ESLint config.
   "extends": ["@fiquu/eslint-config/typescript"]
 }
 ```
+
+## Rules
+See [`index.js`](./index.js) and [`typescript.js`](./typescript.js) to view all the applied rules.
