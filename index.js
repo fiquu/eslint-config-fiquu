@@ -15,13 +15,13 @@ module.exports = {
     ecmaVersion: 10
   },
   rules: {
-    'capitalized-comments': ['error', 'always'],
     'no-whitespace-before-property': 'error',
     'max-lines-per-function': ['error', 50],
     'arrow-parens': ['error', 'as-needed'],
     'quote-props': ['error', 'as-needed'],
     'linebreak-style': ['error', 'unix'],
     'padded-blocks': ['error', 'never'],
+    'comma-dangle': ['error', 'never'],
     'no-constructor-return': 'error',
     'no-duplicate-imports': 'error',
     'max-classes-per-file': 'error',
