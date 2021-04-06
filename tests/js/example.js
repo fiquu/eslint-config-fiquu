@@ -7,4 +7,6 @@ function jsfoo(input = true) {
   return { jsbar, output: _output };
 }
 
+Array(10).find(i => i === 'baz');
+
 module.exports = jsfoo;

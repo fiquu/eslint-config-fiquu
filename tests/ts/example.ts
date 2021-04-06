@@ -7,4 +7,6 @@ function tsfoo(input = true): Record<string, string | boolean> {
   return { tsbar, output: _output };
 }
 
+Array(10).find(i => i === 'baz');
+
 export default tsfoo;
