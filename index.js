@@ -1,14 +1,8 @@
 module.exports = {
-  plugins: [
-    'security',
-    'mocha',
-    'jsdoc',
-    'node'
-  ],
+  plugins: ['security', 'mocha', 'node'],
   extends: [
     'plugin:security/recommended',
     'plugin:mocha/recommended',
-    'plugin:jsdoc/recommended',
     'plugin:node/recommended'
   ],
   parserOptions: {
@@ -29,7 +23,7 @@ module.exports = {
     'no-unneeded-ternary': 'error',
     'no-implicit-globals': 'error',
     'no-confusing-arrow': 'error',
-    'quotes': ['error', 'single'],
+    quotes: ['error', 'single'],
     'no-trailing-spaces': 'error',
     'prefer-rest-params': 'error',
     'one-var': ['error', 'never'],
@@ -37,13 +31,12 @@ module.exports = {
     'no-param-reassign': 'error',
     'no-extend-native': 'error',
     'max-lines': ['error', 300],
-    'semi': ['error', 'always'],
+    semi: ['error', 'always'],
     'no-implied-eval': 'error',
     'no-multi-assign': 'error',
     'prefer-template': 'warn',
     'prefer-spread': 'error',
     'no-extra-semi': 'error',
-    'require-jsdoc': 'warn',
     'no-lonely-if': 'error',
     'prefer-const': 'error',
     'no-eq-null': 'error',
@@ -51,7 +44,7 @@ module.exports = {
     'no-alert': 'error',
     'no-eval': 'error',
     'no-var': 'error',
-    'curly': 'error',
+    curly: 'error',
     'no-multiple-empty-lines': [
       'error',
       {
@@ -59,31 +52,34 @@ module.exports = {
       }
     ],
     'padding-line-between-statements': [
-      'error',
+      'warn',
       {
         blankLine: 'always',
-        prev: ['const', 'let', 'var'],
-        next: '*'
+        prev: '*',
+        next: [
+          'do',
+          'if',
+          'for',
+          'let',
+          'try',
+          'iife',
+          'const',
+          'class',
+          'block',
+          'throw',
+          'while',
+          'return',
+          'switch',
+          'export',
+          'block-like'
+        ]
       },
+      { blankLine: 'always', prev: ['const', 'let', 'function'], next: '*' },
       {
         blankLine: 'any',
-        prev: ['const', 'let', 'var'],
-        next: ['const', 'let', 'var']
+        prev: ['const', 'let'],
+        next: ['const', 'let']
       }
-    ],
-    'max-len': [
-      'error',
-      {
-        'tabWidth': 2,
-        'code': 120
-      }
-    ],
-    'indent': [
-      'error',
-      2,
-      {
-        'SwitchCase': 1
-      }
-    ],
+    ]
   }
 };
