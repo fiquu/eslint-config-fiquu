@@ -1,6 +1,6 @@
 {
   "name": "@fiquu/eslint-config",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "fiquu ESLint standard config for TypeScript.",
   "main": "index.js",
   "scripts": {
